@@ -1,0 +1,21 @@
+{
+  "name": "@anchor/system-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Cross-platform system inspection as MCP server (sysinfo / installed apps / packages). Mac/Win/Linux. Used by anchor-backend for cohort + interest signals.",
+  "bin": { "anchor-system-mcp": "dist/index.js" },
+  "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx --watch src/index.ts",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3"
+  }
+}
